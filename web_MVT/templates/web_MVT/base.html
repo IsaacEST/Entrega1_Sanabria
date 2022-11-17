@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+
+<head>
+    
+    {% load static %}
+    
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Django</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet">
+   
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static '/web_MVT/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/web_MVT/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/web_MVT/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/web_MVT/css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/web_MVT/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/web_MVT/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/web_MVT/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static '/web_MVT/css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+    <div id="mobile-menu-wrap"></div>
+       
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7">
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <div class="header__top__right">
+                            
+                            <div class="header__top__hover">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="{% url 'search-product' %}"><img src="{% static 'web_MVT/img/logo.png' %}" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="{% url 'search-product' %}">Buscar</a></li>
+                            <li><a href="{% url 'category' %}">Categoria</a></li>
+                            <li><a href="{% url 'product' %}">Productos</a></li>
+                            <li><a href="{% url 'register' %}">Registro</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__nav__option">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    {% block contenido %}
+
+    {% endblock %}
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src="{% static 'web_MVT/img/footer-logo.png' %}" alt=""></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer__copyright__text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p>Copyright ©
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | This template is made with <i class="fa fa-heart-o"
+                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'web_MVT/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'web_MVT/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'web_MVT/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'web_MVT/js/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'web_MVT/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'web_MVT/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'web_MVT/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'web_MVT/js/mixitup.min.js' %}"></script>
+    <script src="{% static 'web_MVT/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'web_MVT/js/main.js' %}"></script>
+</body>
+
+</html>
