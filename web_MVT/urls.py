@@ -5,7 +5,7 @@ urlpatterns = [
     path("register/", registerViews, name="register"),
     path("product/", productViews, name="product"),
     path("category/", categoryViews, name="category"),
-    path("searchProduct/", searchItem, name="search-product"),
+    path("", searchItem, name="search-product"),
   
 
 ]
